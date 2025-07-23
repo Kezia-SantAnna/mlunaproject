@@ -50,46 +50,88 @@ a {
   text-decoration: inherit;
 }
 
+main {
+  margin-top: 60px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #5b7027;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Segoe UI", sans-serif;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 button:hover {
-  border-color: #646cff;
+  background-color: #a7ab55;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 3px solid #a5d6a7;
+  outline-offset: 2px;
 }
 
 .box {
   width: 100%;
   /* display: grid; */
   justify-content: center;
-  background-color: #646cff;
+  background-color: #ffffff;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.principal-imgs {
+  display: flex;
+}
+
+.principal-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 24px;
+}
+
+.logo {
+  width: 800px;
+  margin-top: 48px;
+  padding: 16px;
+}
+
+.perfil {
+  padding: 18px;
+  border-radius: 50%;
+}
+
+a.social-item > svg {
+  color: #5b7027;
+  padding: 12px;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+a.social-item > svg:hover {
+  color: #a7ab55;
+  transform: translateY(-2px);
+}
+
+a.social-item > svg:focus,
+a.social-item > svg:focus-visible {
+  outline: 3px solid #a5d6a7;
+  outline-offset: 2px;
 }
