@@ -21,7 +21,7 @@ function App() {
       </nav>
       <main>
         <section className="principal">
-          <p>CRN: 25105241/P</p>
+          <p className="crn">CRN: 25105241/P</p>
           <div className="principal-imgs">
             <img
               className="perfil"
@@ -43,21 +43,77 @@ function App() {
               <a className="social-item">
                 <FaTelegram />
               </a>
-              <a className="social-item"
-              href="https://www.instagram.com/nutri_martaluna"
-              target="_blank">
+              <a
+                className="social-item"
+                href="https://www.instagram.com/nutri_martaluna"
+                target="_blank"
+              >
                 <FaInstagram />
               </a>
-              <a className="social-item"
-              href="mailto:nutri.martaluna@gmail.com"
-              target="_blank">
+              <a
+                className="social-item"
+                href="mailto:nutri.martaluna@gmail.com"
+                target="_blank"
+              >
                 <BsEnvelopeAt />
               </a>
-              <a className="social-item"
-              href="https://wa.me/5521983003559/?text=Quero%20agendar%20uma%20consulta.">
+              <a
+                className="social-item"
+                href="https://wa.me/5521983003559/?text=Quero%20agendar%20uma%20consulta."
+              >
                 <FaWhatsapp />
               </a>
             </div>
+            <button className="agenda">Agendar Consulta</button>
+          </div>
+        </section>
+        <section className="box-about-me">
+          <article className="about-me">
+            <h1>Quem sou eu? - Marta Luna</h1>
+            <p>
+              Sou a Marta Luna, nutricionista formada com um propósito: ajudar
+              mulheres a retomarem o controle da própria saúde, com
+              acolhimento, escuta ativa e estratégias personalizadas.
+            </p>
+            <p>
+              Tenho 40+ e, assim como muitas das minhas pacientes, convivo com
+              desafios como endometriose,
+               síndrome dos ovários policísticos (SOP) e resistência à
+              insulina.
+              Minha jornada na nutrição nasceu da dor e da frustração de
+              não encontrar um atendimento que enxergasse o todo
+              que compreendesse que cada mulher é única, com sintomas, emoções e
+              histórias que precisam ser respeitadas.
+            </p>
+            <p>
+              A nutrição transformou a minha vida. Hoje, minha missão é
+              transformar a sua.
+            </p>
+          </article>
+          <div className='logo-page'>
+            <img src="../public/assets/marca dagua-02.png" />
+            <button className="agenda">Agendar Consulta</button>
+          </div>
+        </section>
+        <section className="box-about-me">
+          <div className='logo-page'>
+            <img src="../public/assets/marca dagua-02.png" />
+            <button className="agenda">Agendar Consulta</button>
+          </div>
+          <article className="about-me">
+            <h1>Missão</h1>
+            <p>Acolher, escutar e cuidar de mulheres 30+ que buscam emagrecimento com saúde, equilíbrio e propósito, utilizando a nutrição como ferramenta de transformação e empoderamento.</p>
+          </article>
+        </section>
+        <section className="box-about-me">
+          <article className="about-me">
+            <h1>Visão</h1>
+            <p>
+              Ser referência em nutrição feminina personalizada e acolhedora, promovendo saúde real e sustentável para mulheres que desejam viver com mais leveza, consciência e autonomia.
+            </p>
+          </article>
+          <div className='logo-page'>
+            <img src="../public/assets/marca dagua-02.png" />
             <button className="agenda">Agendar Consulta</button>
           </div>
         </section>

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Dulcinea";
+  src: url("../public/fonts/Dulcinea.ttf") format("truetype");
+}
+
 :root {
   font-family: "Open Sans", Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -27,6 +32,7 @@ body {
 
 nav {
   position: fixed;
+  z-index: 5;
   top: 0;
   display: flex;
   justify-content: space-between;
@@ -51,25 +57,19 @@ a {
   text-decoration: inherit;
 }
 
-p {
-  position: absolute;
-  right:0;
-  padding: 8px;
+h1 {
+  font-family: "Dulcinea", "Helvetica Neue", Helvetica, sans-serif;
+  padding: 16px;
+  color: #b38547;
+  font-size: 3.2em;
+  line-height: 1.1;
 }
 
 main {
   margin-top: 60px;
-}
-
-section {
   display: flex;
   flex-direction: column;
-  position: relative;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  gap: 80px;
 }
 
 button {
@@ -94,53 +94,6 @@ button:hover {
 
 button:focus,
 button:focus-visible {
-  outline: 3px solid #a5d6a7;
-  outline-offset: 2px;
-}
-
-.box {
-  width: 100%;
-  /* display: grid; */
-  justify-content: center;
-  background-color: #ffffff;
-}
-
-.principal-imgs {
-  display: flex;
-  padding: 12px;
-}
-
-.principal-buttons {
-  display: flex;
-  justify-content: space-between;
-  padding-inline: 24px;
-}
-
-.logo {
-  width: 800px;
-  margin-top: 48px;
-  padding: 16px;
-}
-
-.perfil {
-  padding: 18px;
-  border-radius: 50%;
-}
-
-a.social-item > svg {
-  color: #5b7027;
-  padding: 12px;
-  font-size: 24px;
-  transition: all 0.3s ease;
-}
-
-a.social-item > svg:hover {
-  color: #a7ab55;
-  transform: translateY(-2px);
-}
-
-a.social-item > svg:focus,
-a.social-item > svg:focus-visible {
   outline: 3px solid #a5d6a7;
   outline-offset: 2px;
 }
