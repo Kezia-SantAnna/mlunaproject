@@ -30,6 +30,13 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
 nav {
   position: fixed;
   z-index: 5;
@@ -59,17 +66,12 @@ a {
 
 h1 {
   font-family: "Dulcinea", "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
   padding: 16px;
   color: #b38547;
   font-size: 3.2em;
   line-height: 1.1;
-}
-
-main {
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
+  margin-bottom: 4px;
 }
 
 button {
