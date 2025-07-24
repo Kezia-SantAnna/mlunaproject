@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgb(255, 255, 255);
+  color: #972822;
   background-color: white;
 
   font-synthesis: none;
@@ -33,6 +33,7 @@ nav {
   width: 100%;
   padding: 16px;
   background-color: #5a6e27;
+  color: white;
 }
 
 nav > a {
@@ -50,6 +51,12 @@ a {
   text-decoration: inherit;
 }
 
+p {
+  position: absolute;
+  right:0;
+  padding: 8px;
+}
+
 main {
   margin-top: 60px;
 }
@@ -57,6 +64,7 @@ main {
 section {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 h1 {
@@ -99,6 +107,7 @@ button:focus-visible {
 
 .principal-imgs {
   display: flex;
+  padding: 12px;
 }
 
 .principal-buttons {

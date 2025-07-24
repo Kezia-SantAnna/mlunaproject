@@ -21,6 +21,7 @@ function App() {
       </nav>
       <main>
         <section className="principal">
+          <p>CRN: 25105241/P</p>
           <div className="principal-imgs">
             <img
               className="perfil"
@@ -32,19 +33,28 @@ function App() {
           </div>
           <div className="principal-buttons">
             <div>
-              <a className="social-item">
+              <a
+                className="social-item"
+                href="https://www.facebook.com/profile.php"
+                target="_blank"
+              >
                 <FaFacebook />
               </a>
               <a className="social-item">
                 <FaTelegram />
               </a>
-              <a className="social-item">
+              <a className="social-item"
+              href="https://www.instagram.com/nutri_martaluna"
+              target="_blank">
                 <FaInstagram />
               </a>
-              <a className="social-item">
+              <a className="social-item"
+              href="mailto:nutri.martaluna@gmail.com"
+              target="_blank">
                 <BsEnvelopeAt />
               </a>
-              <a className="social-item">
+              <a className="social-item"
+              href="https://wa.me/5521983003559/?text=Quero%20agendar%20uma%20consulta.">
                 <FaWhatsapp />
               </a>
             </div>
