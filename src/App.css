@@ -102,16 +102,19 @@ a.social-item > svg:focus-visible {
 
 .button-footer {
   color: white;
+  padding-inline : 28px;
 }
 
-.container-footer {
+
+.box-footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding-inline: 24px;
 }
 
 .img-Footer {
   width: 20%;
-  align-items: center;
+  grid-column: 2;
+  /* justify-content: space-around; */
 }

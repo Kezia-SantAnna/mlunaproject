@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import { BsEnvelopeAt } from "react-icons/bs";
 import { FaAnglesDown } from "react-icons/fa6";
+import { SiGooglemaps } from "react-icons/si";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -69,8 +70,16 @@ function App() {
               <a
                 className="social-item"
                 href="https://wa.me/5521983003559/?text=Quero%20agendar%20uma%20consulta."
+                target="_blank"
               >
                 <FaWhatsapp />
+              </a>
+              <a
+                className="social-item"
+                href="https://maps.app.goo.gl/QyjrDttaeVnQz9Bc8"
+                target="_blank"
+              >
+                <SiGooglemaps />
               </a>
             </div>
             <button className="button-agenda">Agendar Consulta</button>
@@ -132,45 +141,50 @@ function App() {
       <footer>
         <div>
           <p>Marta luna / CRN: 25105241/P</p>
-          <p>Nova Iguaçu - Presencial e Online</p>
+          <a href="https://maps.app.goo.gl/vBsn1tqdc2mLNQ9Q7" target="_blank">
+            Avenida Governador Roberto Silveira, 470 - Centro - Nova Iguaçu
+          </a>
+          <p>Presencial e Online</p>
         </div>
-        <div className="container-footer">
-          <a
-            className="button-footer"
-            href="https://www.facebook.com/profile.php"
-            target="_blank"
-          >
-            <FaFacebook />
-          </a>
-          <a className="button-footer">
-            <FaTelegram />
-          </a>
-          <a
-            className="button-footer"
-            href="https://www.instagram.com/nutri_martaluna"
-            target="_blank"
-          >
-            <FaInstagram />
-          </a>
-          <a
-            className="button-footer"
-            href="mailto:nutri.martaluna@gmail.com"
-            target="_blank"
-          >
-            <BsEnvelopeAt />
-          </a>
-          <a
-            className="button-footer"
-            href="https://wa.me/5521983003559/?text=Quero%20agendar%20uma%20consulta."
-          >
-            <FaWhatsapp />
-          </a>
+        <div className="box-footer">
+          <div className="container-footer">
+            <a
+              className="button-footer"
+              href="https://www.facebook.com/profile.php"
+              target="_blank"
+            >
+              <FaFacebook />
+            </a>
+            <a className="button-footer">
+              <FaTelegram />
+            </a>
+            <a
+              className="button-footer"
+              href="https://www.instagram.com/nutri_martaluna"
+              target="_blank"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              className="button-footer"
+              href="mailto:nutri.martaluna@gmail.com"
+              target="_blank"
+            >
+              <BsEnvelopeAt />
+            </a>
+            <a
+              className="button-footer"
+              href="https://wa.me/5521983003559/?text=Quero%20agendar%20uma%20consulta."
+            >
+              <FaWhatsapp />
+            </a>
+          </div>
+          <img
+            className="img-Footer"
+            src="../public/assets/variação em branco_Prancheta 1.png"
+            alt="assinatura em imagem"
+          />
         </div>
-        <img
-          className="img-Footer"
-          src="../public/assets/com fundo2_Prancheta 1.png"
-          alt="assinatura em imagem"
-        />
       </footer>
     </div>
   );
