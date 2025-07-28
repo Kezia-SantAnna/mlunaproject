@@ -16,6 +16,7 @@
 
 .principal-imgs {
   display: flex;
+  align-items: center;
   padding: 12px;
 }
 
@@ -26,7 +27,6 @@
 }
 
 .logo {
-  width: 800px;
   margin-top: 48px;
   padding: 16px;
 }
@@ -34,6 +34,14 @@
 .perfil {
   padding: 18px;
   border-radius: 50%;
+}
+
+.principal-imgs > .logo {
+  width: 60%;
+}
+
+.principal-imgs > .perfil {
+  width: 20%;
 }
 
 a.social-item > svg {
@@ -63,7 +71,7 @@ a.social-item > svg:focus-visible {
 .about-me {
   display: flex;
   flex-direction: column;
-  max-width: 50%;
+  max-width: 65%;
 }
 
 .about-me > button {
@@ -90,4 +98,20 @@ a.social-item > svg:focus-visible {
 .logo-page > button {
   grid-column: 2;
   grid-row: 2;
+}
+
+.button-footer {
+  color: white;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-inline: 24px;
+}
+
+.img-Footer {
+  width: 20%;
+  align-items: center;
 }

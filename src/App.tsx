@@ -15,9 +15,16 @@ function App() {
   return (
     <div className="box">
       <nav>
-        <a>
-          Sobre mim <FaAnglesDown />
-        </a>
+        <div className="dropdown">
+          <a className="dropbtn">
+            Sobre mim <FaAnglesDown />
+          </a>
+          {/* <ul className="dropDown-Content">
+          <li><a>Quem sou eu?</a></li>
+          <li><a>Missão</a></li>
+          <li><a>Visão</a></li>
+          </ul> */}
+        </div>
         <a>Ebooks</a>
         <a>Eventos</a>
         <a>Contatos</a>
@@ -30,7 +37,6 @@ function App() {
               className="perfil"
               src="assets/MARTALUNA.jpg"
               alt="foto-perfil"
-              height="300px"
             />
             <img className="logo" src="assets/CAPA.png" alt="logo-page" />
           </div>
@@ -123,6 +129,49 @@ function App() {
           <img src="../public/assets/marca dagua-02.png" />
         </section>
       </main>
+      <footer>
+        <div>
+          <p>Marta luna / CRN: 25105241/P</p>
+          <p>Nova Iguaçu - Presencial e Online</p>
+        </div>
+        <div className="container-footer">
+          <a
+            className="button-footer"
+            href="https://www.facebook.com/profile.php"
+            target="_blank"
+          >
+            <FaFacebook />
+          </a>
+          <a className="button-footer">
+            <FaTelegram />
+          </a>
+          <a
+            className="button-footer"
+            href="https://www.instagram.com/nutri_martaluna"
+            target="_blank"
+          >
+            <FaInstagram />
+          </a>
+          <a
+            className="button-footer"
+            href="mailto:nutri.martaluna@gmail.com"
+            target="_blank"
+          >
+            <BsEnvelopeAt />
+          </a>
+          <a
+            className="button-footer"
+            href="https://wa.me/5521983003559/?text=Quero%20agendar%20uma%20consulta."
+          >
+            <FaWhatsapp />
+          </a>
+        </div>
+        <img
+          className="img-Footer"
+          src="../public/assets/com fundo2_Prancheta 1.png"
+          alt="assinatura em imagem"
+        />
+      </footer>
     </div>
   );
 }
