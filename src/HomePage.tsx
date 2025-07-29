@@ -1,5 +1,10 @@
 import { BsEnvelopeAt } from "react-icons/bs";
-import { FaFacebook, FaInstagram, FaTelegram, FaWhatsapp } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTelegram,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { SiGooglemaps } from "react-icons/si";
 
 function HomePage() {
@@ -59,7 +64,7 @@ function HomePage() {
           <button className="button-agenda">Agendar Consulta</button>
         </div>
       </section>
-      <section className="box-about-me">
+      <section className="box-about-me" id="who-section">
         <article className="about-me">
           <h1>Quem sou eu? - Marta Luna</h1>
           <p>
@@ -85,7 +90,7 @@ function HomePage() {
           <button className="button-agenda">Agendar Consulta</button>
         </div>
       </section>
-      <section className="box-about-me">
+      <section className="box-about-me" id="mission-section">
         <img src="../public/assets/marca dagua-02.png" />
         <article className="about-me">
           <h1>Missão</h1>
@@ -97,7 +102,7 @@ function HomePage() {
           <button style={{ alignSelf: "flex-end" }}>Agendar Consulta</button>
         </article>
       </section>
-      <section className="box-about-me">
+      <section className="box-about-me" id="vision-section">
         <article className="about-me">
           <h1>Visão</h1>
           <p>
