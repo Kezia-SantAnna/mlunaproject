@@ -1,6 +1,7 @@
 {
   "files": [],
   "compilerOptions": {
+    "noEmitOnError": false,
     "baseUrl": "./",
     "paths": {
       "app/*": ["src/app/*"]

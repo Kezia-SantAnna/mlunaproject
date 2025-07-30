@@ -6,6 +6,9 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import { SiGooglemaps } from "react-icons/si";
+import SocialItem from "./SocialItem";
+
+
 
 function HomePage() {
   return (
@@ -22,44 +25,30 @@ function HomePage() {
         </div>
         <div className="principal-buttons">
           <div>
-            <a
-              className="social-item"
-              href="https://www.facebook.com/profile.php"
-              target="_blank"
-            >
-              <FaFacebook />
-            </a>
-            <a className="social-item">
-              <FaTelegram />
-            </a>
-            <a
-              className="social-item"
-              href="https://www.instagram.com/nutri_martaluna"
-              target="_blank"
-            >
-              <FaInstagram />
-            </a>
-            <a
-              className="social-item"
-              href="mailto:nutri.martaluna@gmail.com"
-              target="_blank"
-            >
-              <BsEnvelopeAt />
-            </a>
-            <a
-              className="social-item"
-              href="https://wa.me/5521983003559/?text=Quero%20agendar%20uma%20consulta."
-              target="_blank"
-            >
-              <FaWhatsapp />
-            </a>
-            <a
-              className="social-item"
-              href="https://maps.app.goo.gl/QyjrDttaeVnQz9Bc8"
-              target="_blank"
-            >
-              <SiGooglemaps />
-            </a>
+            <SocialItem
+              link="https://www.facebook.com/profile.php"
+              icon={<FaFacebook />}
+            />
+            <SocialItem
+              link=""
+              icon={<FaTelegram />}
+            />
+            <SocialItem
+              link="https://www.instagram.com/nutri_martaluna"
+              icon={<FaInstagram />}
+            />
+            <SocialItem
+              link="mailto:nutri.martaluna@gmail.com"
+              icon={<BsEnvelopeAt />}
+            />
+            <SocialItem
+              link="https://wa.me/5521983003559/?text=Quero%20agendar%20uma%20consulta."
+              icon={<FaWhatsapp />}
+            />
+            <SocialItem
+              link="https://maps.app.goo.gl/QyjrDttaeVnQz9Bc8"
+              icon={<SiGooglemaps />}
+            />
           </div>
           <button className="button-agenda">Agendar Consulta</button>
         </div>

@@ -1,0 +1,105 @@
+.main-contact {
+  background-image: url(../public/assets/Pattern.png);
+}
+
+.div-contact {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.section-contact {
+  width: 42%;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.box-contact {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 8px;
+}
+
+.box-contact:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.box-contact svg {
+  color: #7bae5f;
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.box-contact h2 {
+  margin: 0 0 4px 0;
+  font-size: 1.2rem;
+  color: #4b6040;
+}
+
+.box-contact a {
+  font-size: 1rem;
+  color: #5b7027;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.box-contact a:hover {
+  text-decoration: underline;
+  color: #3f521d;
+}
+
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group p {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #4b6040;
+  font-size: 1rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1px solid #c3d9c8;
+  border-radius: 8px;
+  background-color: #f7fdf9;
+  color: #333;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+}
+
+.input-group input:focus {
+  border-color: #7BAE5F;
+  box-shadow: 0 0 0 3px rgba(123, 174, 95, 0.2);
+  outline: none;
+}
+
+.box-message {
+  border: 1px solid #cce2c3;
+  border-radius: 12px;
+  background-color: #f7fdf9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.input-group textarea {
+  width: 100%;
+  min-height: 5em;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1px solid #c3d9c8;
+  border-radius: 8px;
+  background-color: #f7fdf9;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  resize: vertical;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
+}
