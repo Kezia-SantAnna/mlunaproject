@@ -8,8 +8,6 @@ import {
 import { SiGooglemaps } from "react-icons/si";
 import SocialItem from "./SocialItem";
 
-
-
 function HomePage() {
   return (
     <main>
@@ -26,13 +24,10 @@ function HomePage() {
         <div className="principal-buttons">
           <div>
             <SocialItem
-              link="https://www.facebook.com/profile.php"
+              link="https://www.facebook.com/profile.php?id=61574643815081"
               icon={<FaFacebook />}
             />
-            <SocialItem
-              link=""
-              icon={<FaTelegram />}
-            />
+            <SocialItem link="" icon={<FaTelegram />} />
             <SocialItem
               link="https://www.instagram.com/nutri_martaluna"
               icon={<FaInstagram />}
@@ -75,12 +70,12 @@ function HomePage() {
           </p>
         </article>
         <div className="logo-page">
-          <img src="../public/assets/marca-dagua.png" />
+          <img src="assets/marca-dagua.png" />
           <button className="button-agenda">Agendar Consulta</button>
         </div>
       </section>
       <section className="box-about-me" id="mission-section">
-        <img src="../public/assets/marca-dagua.png" />
+        <img src="assets/marca-dagua.png" />
         <article className="about-me">
           <h1>Missão</h1>
           <p>
@@ -101,7 +96,7 @@ function HomePage() {
           </p>
           <button style={{ alignSelf: "flex-start" }}>Agendar Consulta</button>
         </article>
-        <img src="../public/assets/marca-dagua.png" />
+        <img src="assets/marca-dagua.png" />
       </section>
     </main>
   );
