@@ -38,7 +38,7 @@ function Contact() {
         <section className="section-contact">
           <article>
             <h2>🥑 Fale comigo!</h2>
-            <p>
+            <p className="contact-subtitle">
               Se você tem dúvidas, deseja agendar uma consulta ou quer saber
               mais sobre como a nutrição pode transformar sua vida, estou aqui
               para ajudar. Preencha o formulário abaixo ou entre em contato

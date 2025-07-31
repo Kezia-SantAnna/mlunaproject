@@ -1,7 +1,7 @@
 // import { useState } from "react";
 import "./App.css";
 
-import Header from "./Header.tsx";
+import Header from "./Header";
 // import HomePage from "./HomePage";
 import Footer from "./Footer";
 import Contact from "./Contact";
