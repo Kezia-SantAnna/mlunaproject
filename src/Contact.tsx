@@ -68,7 +68,7 @@ function Contact() {
             <h2>Me siga nas redes sociais</h2>
             <a
               className="social-item"
-              href="https://www.facebook.com/profile.php"
+              href="https://www.facebook.com/profile.php?id=61574643815081"
               target="_blank"
             >
               <FaFacebook />

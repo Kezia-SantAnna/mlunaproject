@@ -20,7 +20,7 @@ function Footer() {
         <div className="container-footer">
           <a
             className="button-footer"
-            href="https://www.facebook.com/profile.php"
+            href="https://www.facebook.com/profile.php?id=61574643815081"
             target="_blank"
           >
             <FaFacebook />
@@ -51,7 +51,7 @@ function Footer() {
         </div>
         <img
           className="img-Footer"
-          src="../public/assets/variação em branco_Prancheta 1.png"
+          src="assets/branco_prancheta.png"
           alt="assinatura em imagem"
         />
       </div>
