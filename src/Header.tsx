@@ -1,28 +1,35 @@
 import { FaAnglesDown } from "react-icons/fa6";
+import { Link } from "react-router";
 
 function Header() {
   const scrollTo = (id: string) => {
     const section = document.getElementById(id);
     section?.scrollIntoView({ behavior: "smooth" });
   };
-  
-  const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" })
+
+  const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <nav>
       <div className="dropdown">
-        <a className="dropbtn" onClick={scrollTop}>
+        <Link to="/" className="dropbtn" onClick={scrollTop}>
           Sobre mim <FaAnglesDown />
-        </a>
+        </Link>
         <div className="dropdown-content">
-          <a onClick={() => scrollTo("who-section")}>Quem sou eu</a>
-          <a onClick={() => scrollTo("mission-section")}>Missão</a>
-          <a onClick={() => scrollTo("vision-section")}>Visão</a>
+          <Link to="/" onClick={() => scrollTo("who-section")}>
+            Quem sou eu
+          </Link>
+          <Link to="/" onClick={() => scrollTo("mission-section")}>
+            Missão
+          </Link>
+          <Link to="/" onClick={() => scrollTo("vision-section")}>
+            Visão
+          </Link>
         </div>
       </div>
       <a>Ebooks</a>
       <a>Eventos</a>
-      <a>Contatos</a>
+      <Link to="/contact">Contatos</Link>
     </nav>
   );
 }

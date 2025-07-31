@@ -4,7 +4,7 @@ import "./App.css";
 import Header from "./Header";
 // import HomePage from "./HomePage";
 import Footer from "./Footer";
-import Contact from "./Contact";
+import { Outlet } from "react-router";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -12,8 +12,7 @@ function App() {
   return (
     <div className="box">
       <Header />
-      {/* <HomePage /> */}
-      <Contact />
+      <Outlet />
       <Footer />
     </div>
   );
