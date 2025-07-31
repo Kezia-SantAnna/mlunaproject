@@ -75,12 +75,12 @@ function HomePage() {
           </p>
         </article>
         <div className="logo-page">
-          <img src="../public/assets/marca dagua-02.png" />
+          <img src="../public/assets/marca-dagua.png" />
           <button className="button-agenda">Agendar Consulta</button>
         </div>
       </section>
       <section className="box-about-me" id="mission-section">
-        <img src="../public/assets/marca dagua-02.png" />
+        <img src="../public/assets/marca-dagua.png" />
         <article className="about-me">
           <h1>Missão</h1>
           <p>
@@ -101,7 +101,7 @@ function HomePage() {
           </p>
           <button style={{ alignSelf: "flex-start" }}>Agendar Consulta</button>
         </article>
-        <img src="../public/assets/marca dagua-02.png" />
+        <img src="../public/assets/marca-dagua.png" />
       </section>
     </main>
   );

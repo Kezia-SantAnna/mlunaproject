@@ -51,7 +51,7 @@ function Footer() {
         </div>
         <img
           className="img-Footer"
-          src="../public/assets/variação em branco_Prancheta 1.png"
+          src="../public/assets/branco_prancheta.png"
           alt="assinatura em imagem"
         />
       </div>
