@@ -19,7 +19,7 @@ function HomePage() {
             src="assets/MARTALUNA.jpg"
             alt="foto-perfil"
           />
-          <img className="logo" src="assets/CAPA.png" alt="logo-page" />
+          <img className="logo" src="assets/CAPA.png" alt="logo-capa" />
         </div>
         <div className="principal-buttons">
           <div>

@@ -34,15 +34,16 @@
 .perfil {
   padding: 18px;
   border-radius: 50%;
+  width: 30%;
 }
 
 .principal-imgs > .logo {
   width: 60%;
 }
 
-.principal-imgs > .perfil {
+/* .principal-imgs > .perfil {
   width: 20%;
-}
+} */
 
 a.social-item > svg {
   color: #5b7027;
@@ -169,3 +170,45 @@ a.social-item > svg:focus-visible {
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15);
 }
 
+@media (max-width: 426px) {
+  .principal-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .perfil {
+    width: 40%;
+  }
+
+  .box-about-me {
+    flex-direction: column;
+  }
+
+  .about-me {
+    max-width: 95%;
+    text-align: center;
+  }
+  .logo-page > img {
+    visibility: hidden;
+    display: none;
+  }
+
+  #mission-section > img {
+    width: 50%;
+  }
+
+  #vision-section > img {
+    visibility: hidden;
+    display: none;
+  }
+
+  .logo-page > button {
+    grid-column: 2;
+    max-width: 80%;
+
+  }
+
+  .about-me > button {
+    align-self: center !important;
+  }
+}

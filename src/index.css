@@ -117,4 +117,8 @@ footer {
   footer {
     grid-template-columns: auto;
   }
+
+  main{
+    gap:0;
+  }
 }
