@@ -5,6 +5,7 @@ import Header from "./Header";
 // import HomePage from "./HomePage";
 import Footer from "./Footer";
 import { Outlet } from "react-router";
+import MobileHeader from "./MobileHeader";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className="box">
       <Header />
+      <MobileHeader />
       <Outlet />
       <Footer />
     </div>

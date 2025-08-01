@@ -28,7 +28,6 @@ body {
   margin: 0;
   box-sizing: border-box;
   padding: 0;
-  overflow-x: hidden;
 }
 
 main {
@@ -107,18 +106,23 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
-  width: 100%;
+  width: fit-content;
   padding: 16px;
   background-color: #5a6e27;
   color: white;
 }
 
 @media (max-width: 426px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
   footer {
     grid-template-columns: auto;
   }
 
   main{
+    margin-top: 40px;
     gap:0;
   }
 }

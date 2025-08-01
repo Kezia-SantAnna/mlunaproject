@@ -10,7 +10,7 @@ function Header() {
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
-    <nav>
+    <nav className="default-header">
       <div className="dropdown">
         <Link to="/" className="dropbtn" onClick={scrollTop}>
           Sobre mim <FaAnglesDown />

@@ -28,17 +28,14 @@
 
 .logo {
   margin-top: 48px;
-  padding: 16px;
+  padding: 8px;
+  width: 50%;
 }
 
 .perfil {
-  padding: 18px;
+  padding: 8px;
   border-radius: 50%;
   width: 30%;
-}
-
-.principal-imgs > .logo {
-  width: 60%;
 }
 
 /* .principal-imgs > .perfil {
@@ -116,58 +113,6 @@ a.social-item > svg:focus-visible {
 .img-Footer {
   width: 30%;
   grid-column: 2;
-  /* justify-content: space-around; */
-}
-
-/* ||| */
-
-.dropbtn {
-  display: flex;
-  align-items: center;
-  color: white;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  gap: 12px;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #5a6e27;
-  min-width: 160px;
-  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  padding: 8px 12px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  cursor: pointer;
-  background-color: #a7ab55;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 426px) {
