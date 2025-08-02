@@ -7,8 +7,30 @@ import {
 } from "react-icons/fa";
 import { SiGooglemaps } from "react-icons/si";
 import SocialItem from "./SocialItem";
+import { useEffect } from "react";
 
 function HomePage() {
+  // JavaScript para aplicar quando o elemento entra na tela
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          } else {
+            entry.target.classList.remove("show");
+          }
+        });
+      }
+      // {
+      //   root: null,
+      //   threshold: 0,
+      // }
+    );
+
+    document.querySelectorAll(".fade-in").forEach((el) => observer.observe(el));
+  }, []);
+
   return (
     <main>
       <section className="principal">
@@ -74,7 +96,7 @@ function HomePage() {
           <button className="button-agenda">Agendar Consulta</button>
         </div>
       </section>
-      <section className="box-about-me" id="mission-section">
+      <section className="box-about-me fade-in" id="mission-section">
         <img src="assets/marca-dagua.png" />
         <article className="about-me">
           <h1>Missão</h1>
@@ -86,8 +108,8 @@ function HomePage() {
           <button style={{ alignSelf: "flex-end" }}>Agendar Consulta</button>
         </article>
       </section>
-      <section className="box-about-me" id="vision-section">
-        <article className="about-me">
+      <section className="box-about-me fade-in" id="vision-section">
+        <article className="about-me ">
           <h1>Visão</h1>
           <p>
             Ser referência em nutrição feminina personalizada e acolhedora,

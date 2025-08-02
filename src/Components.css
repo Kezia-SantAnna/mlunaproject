@@ -52,7 +52,6 @@
   color: #3f521d;
 }
 
-
 .input-group {
   margin-bottom: 20px;
 }
@@ -73,12 +72,12 @@
   background-color: #f7fdf9;
   color: #333;
   transition: border-color 0.3s, box-shadow 0.3s;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   box-sizing: border-box;
 }
 
 .input-group input:focus {
-  border-color: #7BAE5F;
+  border-color: #7bae5f;
   box-shadow: 0 0 0 3px rgba(123, 174, 95, 0.2);
   outline: none;
 }
@@ -99,7 +98,7 @@
   border-radius: 8px;
   background-color: #f7fdf9;
   color: #333;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   resize: vertical;
   transition: border-color 0.3s, box-shadow 0.3s;
   box-sizing: border-box;
@@ -112,6 +111,19 @@
   border-radius: 8px;
 }
 
+.fade-in {
+  /* background-color: #7da06f46; */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease-in-out;
+  /* animation: change-polygon 8s ease-in infinite; */
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 769px) {
   .div-contact {
     flex-direction: column;
@@ -120,6 +132,20 @@
   }
 
   .section-contact {
-    width: 90%
+    width: 90%;
+  }
+}
+
+@keyframes change-polygon {
+  0% {
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+  }
+
+  50% {
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  100% {
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
   }
 }

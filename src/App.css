@@ -23,7 +23,7 @@
 .principal-buttons {
   display: flex;
   justify-content: space-between;
-  padding-inline: 24px;
+  padding-inline: 16px;
 }
 
 .logo {
@@ -108,6 +108,7 @@ a.social-item > svg:focus-visible {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
+  gap: 8px;
 }
 
 .img-Footer {
@@ -115,7 +116,7 @@ a.social-item > svg:focus-visible {
   grid-column: 2;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 769px) {
   .principal-buttons {
     flex-direction: column;
     align-items: center;
@@ -133,9 +134,19 @@ a.social-item > svg:focus-visible {
     max-width: 95%;
     text-align: center;
   }
+
+  .logo-page {
+    display: flex;
+    justify-content: center;
+  }
+
   .logo-page > img {
     visibility: hidden;
     display: none;
+  }
+
+  .logo-page > button {
+    max-width: 80%;
   }
 
   #mission-section > img {
@@ -147,13 +158,20 @@ a.social-item > svg:focus-visible {
     display: none;
   }
 
-  .logo-page > button {
-    grid-column: 2;
-    max-width: 80%;
-
-  }
-
   .about-me > button {
     align-self: center !important;
+  }
+
+  .container-footer {
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    font-size: 20px;
+  }
+
+  .img-Footer {
+    width: 40%;
   }
 }

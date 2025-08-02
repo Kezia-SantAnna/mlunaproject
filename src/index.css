@@ -24,10 +24,11 @@
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   margin: 0;
   box-sizing: border-box;
   padding: 0;
+  overflow-x: hidden;
 }
 
 main {
@@ -119,10 +120,15 @@ footer {
 
   footer {
     grid-template-columns: auto;
+    font-size: 16px;
   }
 
-  main{
+  main {
     margin-top: 40px;
-    gap:0;
+    gap: 0;
+  }
+
+  p {
+    margin: 0 0 12px;
   }
 }

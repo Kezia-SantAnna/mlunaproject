@@ -10,9 +10,9 @@ function Footer() {
   return (
     <footer>
       <div>
-        <p>Marta luna / CRN: 25105241/P</p>
+        <p>&reg; Marta luna / CRN: 25105241/P</p>
         <a href="https://maps.app.goo.gl/vBsn1tqdc2mLNQ9Q7" target="_blank">
-          Avenida Governador Roberto Silveira, 470 - Centro - Nova Iguaçu
+          <p>Av. Governador Roberto Silveira, 470 - Centro - Nova Iguaçu</p>
         </a>
         <p>Presencial e Online</p>
       </div>
