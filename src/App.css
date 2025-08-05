@@ -116,6 +116,53 @@ a.social-item > svg:focus-visible {
   grid-column: 2;
 }
 
+.card {
+  display: flex;
+  justify-content: center;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  background: #f7f3f3;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+   border: 1px solid #972822;
+   border-radius: 5px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 90%;
+  border-radius: 12px;
+}
+
+.card .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #5b7027;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.card-text {
+
+}
+/* .img-ebook {
+  border: 1px solid #972822;
+  width: 45%;
+} */
+
+.title-ebook{
+  text-align: center;
+}
+
 @media (max-width: 769px) {
   .principal-buttons {
     flex-direction: column;

@@ -27,7 +27,7 @@ function Header() {
           </Link>
         </div>
       </div>
-      <a>Ebooks</a>
+      <Link to="/ebook">Ebook</Link>
       <a>Eventos</a>
       <Link to="/contact">Contatos</Link>
     </nav>
