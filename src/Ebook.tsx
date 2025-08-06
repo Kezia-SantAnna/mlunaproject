@@ -1,6 +1,6 @@
 function Ebook() {
   return (
-    <main>
+    <main className="main-card">
       <article className="title-ebook">
         <h1>Confira os Ebooks que preparei para você</h1>
         <p>
@@ -8,16 +8,22 @@ function Ebook() {
           ajudar a transformar sua alimentação de forma leve e consciente.
         </p>
       </article>
-      <section className="card">
-        <div className="card-text">
+      <section className="card-section">
+        <div className="card">
           <img className="img-ebook" src="assets/guiadecompras.jpeg" />
           <article>
             <h2>Guia de Compras Saudaveis</h2>
             <p>
               Organize sua ida ao mercado e faça escolhas mais conscientes e
-              nutritivas.
+              nutritivas.<br/>
+              <a>saiba mais.</a>
             </p>
-            <button>Quero este ebook</button>
+            <a
+              href="https://wa.me/5521983003559/?text=%20Ebook%20Guia%20de%20compras."
+              target="_blank"
+            >
+              <button>Quero este ebook</button>
+            </a>
           </article>
         </div>
       </section>

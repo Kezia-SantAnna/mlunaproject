@@ -116,20 +116,35 @@ a.social-item > svg:focus-visible {
   grid-column: 2;
 }
 
-.card {
+.main-card {
+  background-image: url(../public/assets/Pattern.png);
   display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.title-ebook {
+  background-color: rgba(255, 255, 255, 0.705);
+  width: 95%;
+}
+
+.card-section {
+  background-color: rgba(255, 255, 255, 0.445);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
   justify-content: center;
-  margin-left: 16px;
-  margin-bottom: 16px;
-  background: #f7f3f3;
-  border-radius: 16px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 16px;
   text-align: center;
-  max-width: 300px;
+  width: 93%;
+}
+
+.card {
+  background-color: #7bae5f73;
+  border-radius: 16px;
   transition: transform 0.3s ease;
-   border: 1px solid #972822;
-   border-radius: 5px;
+  border: 1px solid #972822;
+  border-radius: 5px;
+  padding: 8px;
 }
 
 .card:hover {
@@ -151,15 +166,7 @@ a.social-item > svg:focus-visible {
   text-decoration: none;
 }
 
-.card-text {
-
-}
-/* .img-ebook {
-  border: 1px solid #972822;
-  width: 45%;
-} */
-
-.title-ebook{
+.title-ebook {
   text-align: center;
 }
 
