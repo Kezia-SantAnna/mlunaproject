@@ -1,4 +1,9 @@
+import { useState } from "react";
+import { FaAngleDoubleDown, FaAngleDoubleUp } from "react-icons/fa";
+
 function Ebook() {
+  const [seeMore, setSeeMore] = useState(false);
+
   return (
     <main className="main-card">
       <article className="title-ebook">
@@ -15,8 +20,33 @@ function Ebook() {
             <h2>Guia de Compras Saudaveis</h2>
             <p>
               Organize sua ida ao mercado e faça escolhas mais conscientes e
-              nutritivas.<br/>
-              <a>saiba mais.</a>
+              nutritivas.
+              <br />
+              {seeMore ? (
+                <p>
+                  Este mini e-book foi desenvolvido para ajudar você a fazer
+                  compras com consciência, economia e saúde! Escolher melhor =
+                  comer melhor + gastar menos + desperdiçar menos..
+                </p>
+              ) : (
+                ""
+              )}
+              <p
+                className="see-more"
+                onClick={() => {
+                  setSeeMore(!seeMore);
+                }}
+              >
+                {seeMore ? (
+                  <>
+                    Ver Menos <FaAngleDoubleUp />
+                  </>
+                ) : (
+                  <>
+                    Ver Mais <FaAngleDoubleDown />
+                  </>
+                )}
+              </p>
             </p>
             <a
               href="https://wa.me/5521983003559/?text=%20Ebook%20Guia%20de%20compras."
