@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router";
 import App from "./App";
-import HomePage from "./HomePage";
-import Contact from "./Contact";
-import Ebook from "./Ebook";
+import HomePage from "./pages/HomePage";
+import Contact from "./pages/Contact";
+import Ebook from "./pages/Ebook";
 
 function MyRouter() {
   return (

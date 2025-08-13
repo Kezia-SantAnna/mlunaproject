@@ -7,8 +7,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa6";
 import { SiGooglemaps } from "react-icons/si";
-import "./Components.css";
-import ContactForm from "./ContactForm";
+import ContactForm from "../components/ContactForm";
 
 interface CardProps {
   icon: JSX.Element;

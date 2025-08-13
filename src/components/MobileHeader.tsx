@@ -1,4 +1,3 @@
-import "./Header.css";
 import { useState } from "react";
 import { FaAnglesDown } from "react-icons/fa6";
 import { Link, useLocation } from "react-router";

@@ -6,7 +6,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import { SiGooglemaps } from "react-icons/si";
-import SocialItem from "./SocialItem";
+import SocialItem from "../components/SocialItem";
 import { useEffect } from "react";
 
 function HomePage() {

@@ -1,14 +1,13 @@
-// import { useState } from "react";
-import "./App.css";
+import "./styles/App.css";
+import "./styles/Components.css";
+import "./styles/Header.css";
 
-import Header from "./Header";
-// import HomePage from "./HomePage";
-import Footer from "./Footer";
+import Header from "./pages/Header";
+import MobileHeader from "./components/MobileHeader";
+import Footer from "./components/Footer";
 import { Outlet } from "react-router";
-import MobileHeader from "./MobileHeader";
 
 function App() {
-  // const [count, setCount] = useState(0);
 
   return (
     <div className="box">
