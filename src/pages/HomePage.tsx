@@ -87,8 +87,8 @@ function HomePage() {
             Tenho 40+ e, assim como muitas das minhas pacientes, convivo com
             desafios como endometriose, síndrome dos ovários policísticos (SOP)
             e resistência à insulina. Minha jornada na nutrição nasceu da dor e
-            da frustração de não encontrar um atendimento que enxergasse o todo
-            que compreendesse que cada mulher é única, com sintomas, emoções e
+            da frustração de não encontrar um atendimento que olhasse para o
+            todo e entendesse que cada mulher é única, com sintomas, emoções e
             histórias que precisam ser respeitadas.
           </p>
           <p>
