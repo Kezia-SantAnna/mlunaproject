@@ -2,7 +2,7 @@ import { BsEnvelopeAt } from "react-icons/bs";
 import {
   FaFacebook,
   FaInstagram,
-  FaTelegram,
+  // FaTelegram,
   FaWhatsapp,
 } from "react-icons/fa";
 

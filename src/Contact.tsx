@@ -3,7 +3,7 @@ import { BsEnvelopeAt } from "react-icons/bs";
 import {
   FaFacebook,
   FaInstagram,
-  FaTelegram,
+  // FaTelegram,
   FaWhatsapp,
 } from "react-icons/fa6";
 import { SiGooglemaps } from "react-icons/si";
@@ -86,7 +86,7 @@ function Contact() {
             </a>
           </div>
         </section>
-        <ContactForm/>
+        <ContactForm />
       </div>
     </main>
   );
