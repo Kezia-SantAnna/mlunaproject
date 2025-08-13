@@ -8,6 +8,8 @@ export default function ContactForm() {
     message: "",
   });
 
+  const [emailResponse, setEmailResponse] = useState("");
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -37,20 +39,29 @@ export default function ContactForm() {
       );
 
       if (response.ok) {
-        alert("✅ E-mail enviado com sucesso!");
+        setEmailResponse("success");
         setForm({ name: "", email: "", subject: "", message: "" });
       } else {
         const errorData = await response.json();
-        alert("❌ Erro ao enviar: " + JSON.stringify(errorData));
+        console.error(errorData);
+
+        setEmailResponse("error");
       }
     } catch (error) {
-      alert("❌ Falha na requisição: " + error);
+      console.error(error);
+
+      setEmailResponse("error");
+    } finally {
+      setTimeout(() => {
+        setEmailResponse("");
+      }, 5000);
     }
   };
 
   return (
     <form
       onSubmit={handleSubmit}
+      // TODO: BORDA VERMELHA QUANDO A MENSAGEM FOR ERROR
       style={{ display: "flex", flexDirection: "column" }}
       className="section-contact box-message"
     >
@@ -101,6 +112,18 @@ export default function ContactForm() {
       <button type="submit" style={{ alignSelf: "center" }}>
         Enviar Mensagem
       </button>
+      {emailResponse ? (
+        <span
+          style={{
+            padding: 8,
+            color: emailResponse === "success" ? "#5b741cff" : "inherit",
+          }}
+        >
+          {emailResponse === "success"
+            ? "✅ E-mail enviado com sucesso!"
+            : "❌ Erro! Tente mais tarde ou use outra forma de contato."}
+        </span>
+      ) : null}
     </form>
   );
 }

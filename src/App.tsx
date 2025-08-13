@@ -2,7 +2,7 @@ import "./styles/App.css";
 import "./styles/Components.css";
 import "./styles/Header.css";
 
-import Header from "./pages/Header";
+import Header from "./components/Header";
 import MobileHeader from "./components/MobileHeader";
 import Footer from "./components/Footer";
 import { Outlet } from "react-router";

@@ -23,7 +23,7 @@
 .principal-buttons {
   display: flex;
   justify-content: space-between;
-  padding-inline: 16px;
+  padding-inline: 5%;
 }
 
 .logo {
