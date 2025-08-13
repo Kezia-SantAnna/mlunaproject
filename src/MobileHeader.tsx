@@ -69,7 +69,7 @@ function MobileHeader() {
           <Link to="/ebook" onClick={handleLinkClick}>
             Ebook
           </Link>
-          <a>Eventos</a>
+          {/* <a>Eventos</a> */}
           <Link to="/contact" onClick={handleLinkClick}>
             Contatos
           </Link>

@@ -49,7 +49,7 @@ function HomePage() {
               link="https://www.facebook.com/profile.php?id=61574643815081"
               icon={<FaFacebook />}
             />
-            <SocialItem link="" icon={<FaTelegram />} />
+            {/* <SocialItem link="" icon={<FaTelegram />} /> */}
             <SocialItem
               link="https://www.instagram.com/nutri_martaluna"
               icon={<FaInstagram />}
@@ -67,7 +67,12 @@ function HomePage() {
               icon={<SiGooglemaps />}
             />
           </div>
-          <button className="button-agenda">Agendar Consulta</button>
+          <a
+            href="https://wa.me/5521983003559/?text=Quero%20agendar%20uma%20consulta."
+            target="_blank"
+          >
+            <button className="button-agenda">Agendar Consulta</button>
+          </a>
         </div>
       </section>
       <section className="box-about-me" id="who-section">

@@ -25,9 +25,9 @@ function Footer() {
           >
             <FaFacebook />
           </a>
-          <a className="button-footer">
+          {/* <a className="button-footer">
             <FaTelegram />
-          </a>
+          </a> */}
           <a
             className="button-footer"
             href="https://www.instagram.com/nutri_martaluna"

@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa6";
 import { SiGooglemaps } from "react-icons/si";
 import "./Components.css";
+import ContactForm from "./ContactForm";
 
 interface CardProps {
   icon: JSX.Element;
@@ -73,9 +74,9 @@ function Contact() {
             >
               <FaFacebook />
             </a>
-            <a className="social-item">
+            {/* <a className="social-item">
               <FaTelegram />
-            </a>
+            </a> */}
             <a
               className="social-item"
               href="https://www.instagram.com/nutri_martaluna"
@@ -85,30 +86,7 @@ function Contact() {
             </a>
           </div>
         </section>
-        <section
-          style={{ display: "flex", flexDirection: "column" }}
-          className="section-contact box-message"
-        >
-          <h2>Envie uma mensagem</h2>
-          <p>Preencha o formulário a seguir para entrar em contato comigo</p>
-          <div className="input-group">
-            <p>Nome Completo</p>
-            <input placeholder="Nome e Sobrenome" />
-          </div>
-          <div className="input-group">
-            <p>Email</p>
-            <input type="text" placeholder="Seu Email" />
-          </div>
-          <div className="input-group">
-            <p>Assunto</p>
-            <input type="text" placeholder="Sobre o que quer falar?" />
-          </div>
-          <div className="input-group">
-            <p>Mensagem</p>
-            <textarea placeholder="Sua mensagem" />
-          </div>
-          <button style={{ alignSelf: "center" }}>Enviar Mensagem</button>
-        </section>
+        <ContactForm/>
       </div>
     </main>
   );

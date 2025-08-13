@@ -28,7 +28,7 @@ function Header() {
         </div>
       </div>
       <Link to="/ebook">Ebook</Link>
-      <a>Eventos</a>
+      {/* <a>Eventos</a> */}
       <Link to="/contact">Contatos</Link>
     </nav>
   );
