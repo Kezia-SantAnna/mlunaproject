@@ -7,6 +7,16 @@ main > h1 {
   background-color: rgba(255, 255, 255, 0.705);
 }
 
+span{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
 .div-contact {
   display: flex;
   justify-content: space-evenly;
@@ -55,6 +65,7 @@ main > h1 {
   text-decoration: underline;
   color: #3f521d;
 }
+
 
 .input-group {
   margin-bottom: 20px;

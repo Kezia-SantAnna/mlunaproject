@@ -62,7 +62,7 @@ export default function ContactForm() {
     <form
       onSubmit={handleSubmit}
       // TODO: BORDA VERMELHA QUANDO A MENSAGEM FOR ERROR
-      style={{ display: "flex", flexDirection: "column" }}
+      style={{  border: emailResponse === "error" ? "solid 2px #972822b9" : "none", display: "flex", flexDirection: "column" }}
       className="section-contact box-message"
     >
       <h2>Envie uma mensagem</h2>
@@ -116,7 +116,7 @@ export default function ContactForm() {
         <span
           style={{
             padding: 8,
-            color: emailResponse === "success" ? "#5b741cff" : "inherit",
+            background: emailResponse === "success" ? "#5b741c9d" : "#97282296"
           }}
         >
           {emailResponse === "success"
