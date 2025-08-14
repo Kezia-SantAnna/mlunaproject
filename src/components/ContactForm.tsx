@@ -113,7 +113,7 @@ export default function ContactForm() {
         Enviar Mensagem
       </button>
       {emailResponse ? (
-        <span
+        <span className="feedback"
           style={{
             padding: 8,
             background: emailResponse === "success" ? "#5b741c9d" : "#97282296"
